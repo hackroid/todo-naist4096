@@ -1,14 +1,8 @@
-import { Modal } from 'react-bootstrap'
-
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
-            <Modal show={show} bsSize='large'>
-                <Modal.Header>
-                    <Modal.Title> ToDo App by 2211344 Zhao Bohong </Modal.Title>
-                </Modal.Header>
-            </Modal>
+            <h1 style={{textAlign: "center"}}>Todo App By 2211344 Zhao Bohong</h1>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
