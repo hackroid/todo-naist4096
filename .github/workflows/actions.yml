@@ -17,6 +17,8 @@ jobs:
           SQLITE_DB_LOCATION: /tmp/todo.db
   build_and_push:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     needs: test
     steps:
       - name: checkout
